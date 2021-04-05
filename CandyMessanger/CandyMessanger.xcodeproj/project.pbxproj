@@ -1,0 +1,920 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E3D87EE4B748F9464FCC52E /* Pods_CandyMessangerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DAE399B0D00E344CCCBB1F /* Pods_CandyMessangerTests.framework */; };
+		7C0749E4261A1A8400562C9E /* CornerShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0749E3261A1A8400562C9E /* CornerShape.swift */; };
+		7C0749EC261A1C5A00562C9E /* LoginContextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0749EB261A1C5A00562C9E /* LoginContextView.swift */; };
+		7C0749F4261A1CAD00562C9E /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0749F3261A1CAD00562C9E /* LogInViewModel.swift */; };
+		7C0749F9261A1D5E00562C9E /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0749F8261A1D5E00562C9E /* SignUpViewModel.swift */; };
+		7C074A17261AB11600562C9E /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C074A16261AB11600562C9E /* ActivityIndicator.swift */; };
+		7C5501962618C0F400130B9A /* CandyMessangerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5501952618C0F400130B9A /* CandyMessangerApp.swift */; };
+		7C5501982618C0F400130B9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5501972618C0F400130B9A /* ContentView.swift */; };
+		7C55019A2618C0F600130B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C5501992618C0F600130B9A /* Assets.xcassets */; };
+		7C55019D2618C0F600130B9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C55019C2618C0F600130B9A /* Preview Assets.xcassets */; };
+		7C55019F2618C0F600130B9A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55019E2618C0F600130B9A /* Persistence.swift */; };
+		7C5501A22618C0F600130B9A /* CandyMessanger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C5501A02618C0F600130B9A /* CandyMessanger.xcdatamodeld */; };
+		7C5501AD2618C0F600130B9A /* CandyMessangerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5501AC2618C0F600130B9A /* CandyMessangerTests.swift */; };
+		7C5501B82618C0F600130B9A /* CandyMessangerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5501B72618C0F600130B9A /* CandyMessangerUITests.swift */; };
+		7C5501DA2618CCD700130B9A /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 7C5501D92618CCD700130B9A /* Nuke */; };
+		7C5501E02618CD6600130B9A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7C5501DF2618CD6600130B9A /* Alamofire */; };
+		7C5501E52618CF5A00130B9A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C5501E42618CF5A00130B9A /* GoogleService-Info.plist */; };
+		7C5501F52618D90200130B9A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5501F42618D90200130B9A /* LoginView.swift */; };
+		7C5501FF2618DAD800130B9A /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5501FE2618DAD800130B9A /* RegisterView.swift */; };
+		7C5502042618DAF200130B9A /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5502032618DAF200130B9A /* MainContentView.swift */; };
+		7C55020A2618ED3B00130B9A /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5502092618ED3B00130B9A /* UserService.swift */; };
+		7C5502102618EF4600130B9A /* CandyMessengerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55020F2618EF4600130B9A /* CandyMessengerError.swift */; };
+		7C55021B26193C6500130B9A /* MessageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55021A26193C6500130B9A /* MessageList.swift */; };
+		7C55022026193CB900130B9A /* NewMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55021F26193CB900130B9A /* NewMessage.swift */; };
+		7C55022826193CD800130B9A /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55022726193CD800130B9A /* ChatView.swift */; };
+		7C5502332619402E00130B9A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5502322619402E00130B9A /* SplashView.swift */; };
+		97B44F905AF45FEAB4EC8700 /* Pods_CandyMessanger_CandyMessangerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD8DC90790128BD2F8A4C5B1 /* Pods_CandyMessanger_CandyMessangerUITests.framework */; };
+		D9567EF38F6C9B28722790F2 /* Pods_CandyMessanger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69348A364FF6D5783332E13 /* Pods_CandyMessanger.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C5501A92618C0F600130B9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C55018A2618C0F400130B9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C5501912618C0F400130B9A;
+			remoteInfo = CandyMessanger;
+		};
+		7C5501B42618C0F600130B9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C55018A2618C0F400130B9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C5501912618C0F400130B9A;
+			remoteInfo = CandyMessanger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00924DF7D108423BCC9E97DC /* Pods-CandyMessanger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandyMessanger.release.xcconfig"; path = "Target Support Files/Pods-CandyMessanger/Pods-CandyMessanger.release.xcconfig"; sourceTree = "<group>"; };
+		225508EF51EC023743E55573 /* Pods-CandyMessanger-CandyMessangerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandyMessanger-CandyMessangerUITests.release.xcconfig"; path = "Target Support Files/Pods-CandyMessanger-CandyMessangerUITests/Pods-CandyMessanger-CandyMessangerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		25DAE399B0D00E344CCCBB1F /* Pods_CandyMessangerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CandyMessangerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		393A8D2B738CFA0170660A05 /* Pods-CandyMessangerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandyMessangerTests.debug.xcconfig"; path = "Target Support Files/Pods-CandyMessangerTests/Pods-CandyMessangerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C0749E3261A1A8400562C9E /* CornerShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerShape.swift; sourceTree = "<group>"; };
+		7C0749EB261A1C5A00562C9E /* LoginContextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContextView.swift; sourceTree = "<group>"; };
+		7C0749F3261A1CAD00562C9E /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
+		7C0749F8261A1D5E00562C9E /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		7C074A16261AB11600562C9E /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		7C5501922618C0F400130B9A /* CandyMessanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CandyMessanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C5501952618C0F400130B9A /* CandyMessangerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyMessangerApp.swift; sourceTree = "<group>"; };
+		7C5501972618C0F400130B9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7C5501992618C0F600130B9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C55019C2618C0F600130B9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7C55019E2618C0F600130B9A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		7C5501A12618C0F600130B9A /* CandyMessanger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CandyMessanger.xcdatamodel; sourceTree = "<group>"; };
+		7C5501A32618C0F600130B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C5501A82618C0F600130B9A /* CandyMessangerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CandyMessangerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C5501AC2618C0F600130B9A /* CandyMessangerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyMessangerTests.swift; sourceTree = "<group>"; };
+		7C5501AE2618C0F600130B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C5501B32618C0F600130B9A /* CandyMessangerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CandyMessangerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C5501B72618C0F600130B9A /* CandyMessangerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyMessangerUITests.swift; sourceTree = "<group>"; };
+		7C5501B92618C0F600130B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C5501E42618CF5A00130B9A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7C5501F42618D90200130B9A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7C5501FE2618DAD800130B9A /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		7C5502032618DAF200130B9A /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		7C5502092618ED3B00130B9A /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		7C55020F2618EF4600130B9A /* CandyMessengerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyMessengerError.swift; sourceTree = "<group>"; };
+		7C55021A26193C6500130B9A /* MessageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageList.swift; sourceTree = "<group>"; };
+		7C55021F26193CB900130B9A /* NewMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessage.swift; sourceTree = "<group>"; };
+		7C55022726193CD800130B9A /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		7C5502322619402E00130B9A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		AB6FC0E81D29E7E2212B0A3C /* Pods-CandyMessanger-CandyMessangerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandyMessanger-CandyMessangerUITests.debug.xcconfig"; path = "Target Support Files/Pods-CandyMessanger-CandyMessangerUITests/Pods-CandyMessanger-CandyMessangerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD8DC90790128BD2F8A4C5B1 /* Pods_CandyMessanger_CandyMessangerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CandyMessanger_CandyMessangerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0437E41A8C28AD73424056B /* Pods-CandyMessanger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandyMessanger.debug.xcconfig"; path = "Target Support Files/Pods-CandyMessanger/Pods-CandyMessanger.debug.xcconfig"; sourceTree = "<group>"; };
+		C69348A364FF6D5783332E13 /* Pods_CandyMessanger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CandyMessanger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E54636009E647D65A8A72369 /* Pods-CandyMessangerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandyMessangerTests.release.xcconfig"; path = "Target Support Files/Pods-CandyMessangerTests/Pods-CandyMessangerTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C55018F2618C0F400130B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C5501E02618CD6600130B9A /* Alamofire in Frameworks */,
+				7C5501DA2618CCD700130B9A /* Nuke in Frameworks */,
+				D9567EF38F6C9B28722790F2 /* Pods_CandyMessanger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C5501A52618C0F600130B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E3D87EE4B748F9464FCC52E /* Pods_CandyMessangerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C5501B02618C0F600130B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B44F905AF45FEAB4EC8700 /* Pods_CandyMessanger_CandyMessangerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C0749E2261A1A6900562C9E /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				7C0749E3261A1A8400562C9E /* CornerShape.swift */,
+				7C074A16261AB11600562C9E /* ActivityIndicator.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		7C5501892618C0F400130B9A = {
+			isa = PBXGroup;
+			children = (
+				7C5501942618C0F400130B9A /* CandyMessanger */,
+				7C5501AB2618C0F600130B9A /* CandyMessangerTests */,
+				7C5501B62618C0F600130B9A /* CandyMessangerUITests */,
+				7C5501932618C0F400130B9A /* Products */,
+				C53D0AD0C68D0BE831CFEF10 /* Pods */,
+				B5B9244EE754731B71435B8D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7C5501932618C0F400130B9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C5501922618C0F400130B9A /* CandyMessanger.app */,
+				7C5501A82618C0F600130B9A /* CandyMessangerTests.xctest */,
+				7C5501B32618C0F600130B9A /* CandyMessangerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C5501942618C0F400130B9A /* CandyMessanger */ = {
+			isa = PBXGroup;
+			children = (
+				7C5502372619415900130B9A /* Resource */,
+				7C5502082618ED2700130B9A /* Service */,
+				7C5501FA2618D91200130B9A /* Model */,
+				7C5501F92618D90700130B9A /* ViewModel */,
+				7C5501F32618D8E100130B9A /* View */,
+				7C5501952618C0F400130B9A /* CandyMessangerApp.swift */,
+				7C5501972618C0F400130B9A /* ContentView.swift */,
+				7C5501992618C0F600130B9A /* Assets.xcassets */,
+				7C55019E2618C0F600130B9A /* Persistence.swift */,
+				7C5501A32618C0F600130B9A /* Info.plist */,
+				7C5501E42618CF5A00130B9A /* GoogleService-Info.plist */,
+				7C5501A02618C0F600130B9A /* CandyMessanger.xcdatamodeld */,
+				7C55019B2618C0F600130B9A /* Preview Content */,
+			);
+			path = CandyMessanger;
+			sourceTree = "<group>";
+		};
+		7C55019B2618C0F600130B9A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7C55019C2618C0F600130B9A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7C5501AB2618C0F600130B9A /* CandyMessangerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C5501AC2618C0F600130B9A /* CandyMessangerTests.swift */,
+				7C5501AE2618C0F600130B9A /* Info.plist */,
+			);
+			path = CandyMessangerTests;
+			sourceTree = "<group>";
+		};
+		7C5501B62618C0F600130B9A /* CandyMessangerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7C5501B72618C0F600130B9A /* CandyMessangerUITests.swift */,
+				7C5501B92618C0F600130B9A /* Info.plist */,
+			);
+			path = CandyMessangerUITests;
+			sourceTree = "<group>";
+		};
+		7C5501F32618D8E100130B9A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C0749E2261A1A6900562C9E /* CustomUI */,
+				7C5501F42618D90200130B9A /* LoginView.swift */,
+				7C0749EB261A1C5A00562C9E /* LoginContextView.swift */,
+				7C5501FE2618DAD800130B9A /* RegisterView.swift */,
+				7C5502032618DAF200130B9A /* MainContentView.swift */,
+				7C55021A26193C6500130B9A /* MessageList.swift */,
+				7C55021F26193CB900130B9A /* NewMessage.swift */,
+				7C55022726193CD800130B9A /* ChatView.swift */,
+				7C5502322619402E00130B9A /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C5501F92618D90700130B9A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7C0749F3261A1CAD00562C9E /* LogInViewModel.swift */,
+				7C0749F8261A1D5E00562C9E /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7C5501FA2618D91200130B9A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7C5502082618ED2700130B9A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7C55020E2618EF2000130B9A /* Error */,
+				7C5502092618ED3B00130B9A /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7C55020E2618EF2000130B9A /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				7C55020F2618EF4600130B9A /* CandyMessengerError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		7C5502372619415900130B9A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B5B9244EE754731B71435B8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C69348A364FF6D5783332E13 /* Pods_CandyMessanger.framework */,
+				AD8DC90790128BD2F8A4C5B1 /* Pods_CandyMessanger_CandyMessangerUITests.framework */,
+				25DAE399B0D00E344CCCBB1F /* Pods_CandyMessangerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C53D0AD0C68D0BE831CFEF10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0437E41A8C28AD73424056B /* Pods-CandyMessanger.debug.xcconfig */,
+				00924DF7D108423BCC9E97DC /* Pods-CandyMessanger.release.xcconfig */,
+				AB6FC0E81D29E7E2212B0A3C /* Pods-CandyMessanger-CandyMessangerUITests.debug.xcconfig */,
+				225508EF51EC023743E55573 /* Pods-CandyMessanger-CandyMessangerUITests.release.xcconfig */,
+				393A8D2B738CFA0170660A05 /* Pods-CandyMessangerTests.debug.xcconfig */,
+				E54636009E647D65A8A72369 /* Pods-CandyMessangerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C5501912618C0F400130B9A /* CandyMessanger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C5501BC2618C0F600130B9A /* Build configuration list for PBXNativeTarget "CandyMessanger" */;
+			buildPhases = (
+				E4A6D19EAE40317F61692E8C /* [CP] Check Pods Manifest.lock */,
+				7C55018E2618C0F400130B9A /* Sources */,
+				7C55018F2618C0F400130B9A /* Frameworks */,
+				7C5501902618C0F400130B9A /* Resources */,
+				E595F478D7CBC0740E4DA74E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CandyMessanger;
+			packageProductDependencies = (
+				7C5501D92618CCD700130B9A /* Nuke */,
+				7C5501DF2618CD6600130B9A /* Alamofire */,
+			);
+			productName = CandyMessanger;
+			productReference = 7C5501922618C0F400130B9A /* CandyMessanger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C5501A72618C0F600130B9A /* CandyMessangerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C5501BF2618C0F600130B9A /* Build configuration list for PBXNativeTarget "CandyMessangerTests" */;
+			buildPhases = (
+				CB98DC5D9EB52ABBD23E4E67 /* [CP] Check Pods Manifest.lock */,
+				7C5501A42618C0F600130B9A /* Sources */,
+				7C5501A52618C0F600130B9A /* Frameworks */,
+				7C5501A62618C0F600130B9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C5501AA2618C0F600130B9A /* PBXTargetDependency */,
+			);
+			name = CandyMessangerTests;
+			productName = CandyMessangerTests;
+			productReference = 7C5501A82618C0F600130B9A /* CandyMessangerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7C5501B22618C0F600130B9A /* CandyMessangerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C5501C22618C0F600130B9A /* Build configuration list for PBXNativeTarget "CandyMessangerUITests" */;
+			buildPhases = (
+				C921D8D591A3023B77F01BC4 /* [CP] Check Pods Manifest.lock */,
+				7C5501AF2618C0F600130B9A /* Sources */,
+				7C5501B02618C0F600130B9A /* Frameworks */,
+				7C5501B12618C0F600130B9A /* Resources */,
+				FA2977B4331F0C0BE0A2059C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C5501B52618C0F600130B9A /* PBXTargetDependency */,
+			);
+			name = CandyMessangerUITests;
+			productName = CandyMessangerUITests;
+			productReference = 7C5501B32618C0F600130B9A /* CandyMessangerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C55018A2618C0F400130B9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					7C5501912618C0F400130B9A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					7C5501A72618C0F600130B9A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7C5501912618C0F400130B9A;
+					};
+					7C5501B22618C0F600130B9A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7C5501912618C0F400130B9A;
+					};
+				};
+			};
+			buildConfigurationList = 7C55018D2618C0F400130B9A /* Build configuration list for PBXProject "CandyMessanger" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C5501892618C0F400130B9A;
+			packageReferences = (
+				7C5501D82618CCD700130B9A /* XCRemoteSwiftPackageReference "Nuke" */,
+				7C5501DE2618CD6600130B9A /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 7C5501932618C0F400130B9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C5501912618C0F400130B9A /* CandyMessanger */,
+				7C5501A72618C0F600130B9A /* CandyMessangerTests */,
+				7C5501B22618C0F600130B9A /* CandyMessangerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C5501902618C0F400130B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C55019D2618C0F600130B9A /* Preview Assets.xcassets in Resources */,
+				7C55019A2618C0F600130B9A /* Assets.xcassets in Resources */,
+				7C5501E52618CF5A00130B9A /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C5501A62618C0F600130B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C5501B12618C0F600130B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C921D8D591A3023B77F01BC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CandyMessanger-CandyMessangerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB98DC5D9EB52ABBD23E4E67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CandyMessangerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4A6D19EAE40317F61692E8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CandyMessanger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E595F478D7CBC0740E4DA74E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CandyMessanger/Pods-CandyMessanger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CandyMessanger/Pods-CandyMessanger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CandyMessanger/Pods-CandyMessanger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA2977B4331F0C0BE0A2059C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CandyMessanger-CandyMessangerUITests/Pods-CandyMessanger-CandyMessangerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CandyMessanger-CandyMessangerUITests/Pods-CandyMessanger-CandyMessangerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CandyMessanger-CandyMessangerUITests/Pods-CandyMessanger-CandyMessangerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C55018E2618C0F400130B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C5502042618DAF200130B9A /* MainContentView.swift in Sources */,
+				7C0749F9261A1D5E00562C9E /* SignUpViewModel.swift in Sources */,
+				7C5501FF2618DAD800130B9A /* RegisterView.swift in Sources */,
+				7C55019F2618C0F600130B9A /* Persistence.swift in Sources */,
+				7C5501F52618D90200130B9A /* LoginView.swift in Sources */,
+				7C0749F4261A1CAD00562C9E /* LogInViewModel.swift in Sources */,
+				7C55022826193CD800130B9A /* ChatView.swift in Sources */,
+				7C0749EC261A1C5A00562C9E /* LoginContextView.swift in Sources */,
+				7C55022026193CB900130B9A /* NewMessage.swift in Sources */,
+				7C0749E4261A1A8400562C9E /* CornerShape.swift in Sources */,
+				7C55020A2618ED3B00130B9A /* UserService.swift in Sources */,
+				7C5501982618C0F400130B9A /* ContentView.swift in Sources */,
+				7C5502332619402E00130B9A /* SplashView.swift in Sources */,
+				7C5501962618C0F400130B9A /* CandyMessangerApp.swift in Sources */,
+				7C5501A22618C0F600130B9A /* CandyMessanger.xcdatamodeld in Sources */,
+				7C55021B26193C6500130B9A /* MessageList.swift in Sources */,
+				7C074A17261AB11600562C9E /* ActivityIndicator.swift in Sources */,
+				7C5502102618EF4600130B9A /* CandyMessengerError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C5501A42618C0F600130B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C5501AD2618C0F600130B9A /* CandyMessangerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C5501AF2618C0F600130B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C5501B82618C0F600130B9A /* CandyMessangerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C5501AA2618C0F600130B9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C5501912618C0F400130B9A /* CandyMessanger */;
+			targetProxy = 7C5501A92618C0F600130B9A /* PBXContainerItemProxy */;
+		};
+		7C5501B52618C0F600130B9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C5501912618C0F400130B9A /* CandyMessanger */;
+			targetProxy = 7C5501B42618C0F600130B9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7C5501BA2618C0F600130B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7C5501BB2618C0F600130B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C5501BD2618C0F600130B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0437E41A8C28AD73424056B /* Pods-CandyMessanger.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"CandyMessanger/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CandyMessanger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.happyjem.candymessanger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C5501BE2618C0F600130B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00924DF7D108423BCC9E97DC /* Pods-CandyMessanger.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"CandyMessanger/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CandyMessanger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.happyjem.candymessanger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7C5501C02618C0F600130B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 393A8D2B738CFA0170660A05 /* Pods-CandyMessangerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CandyMessangerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.happyjem.candymessanger.CandyMessangerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CandyMessanger.app/CandyMessanger";
+			};
+			name = Debug;
+		};
+		7C5501C12618C0F600130B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E54636009E647D65A8A72369 /* Pods-CandyMessangerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CandyMessangerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.happyjem.candymessanger.CandyMessangerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CandyMessanger.app/CandyMessanger";
+			};
+			name = Release;
+		};
+		7C5501C32618C0F600130B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB6FC0E81D29E7E2212B0A3C /* Pods-CandyMessanger-CandyMessangerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CandyMessangerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.happyjem.candymessanger.CandyMessangerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CandyMessanger;
+			};
+			name = Debug;
+		};
+		7C5501C42618C0F600130B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 225508EF51EC023743E55573 /* Pods-CandyMessanger-CandyMessangerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CandyMessangerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.happyjem.candymessanger.CandyMessangerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CandyMessanger;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C55018D2618C0F400130B9A /* Build configuration list for PBXProject "CandyMessanger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C5501BA2618C0F600130B9A /* Debug */,
+				7C5501BB2618C0F600130B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C5501BC2618C0F600130B9A /* Build configuration list for PBXNativeTarget "CandyMessanger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C5501BD2618C0F600130B9A /* Debug */,
+				7C5501BE2618C0F600130B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C5501BF2618C0F600130B9A /* Build configuration list for PBXNativeTarget "CandyMessangerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C5501C02618C0F600130B9A /* Debug */,
+				7C5501C12618C0F600130B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C5501C22618C0F600130B9A /* Build configuration list for PBXNativeTarget "CandyMessangerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C5501C32618C0F600130B9A /* Debug */,
+				7C5501C42618C0F600130B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7C5501D82618CCD700130B9A /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.4.1;
+			};
+		};
+		7C5501DE2618CD6600130B9A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7C5501D92618CCD700130B9A /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C5501D82618CCD700130B9A /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		7C5501DF2618CD6600130B9A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C5501DE2618CD6600130B9A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		7C5501A02618C0F600130B9A /* CandyMessanger.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7C5501A12618C0F600130B9A /* CandyMessanger.xcdatamodel */,
+			);
+			currentVersion = 7C5501A12618C0F600130B9A /* CandyMessanger.xcdatamodel */;
+			path = CandyMessanger.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7C55018A2618C0F400130B9A /* Project object */;
+}

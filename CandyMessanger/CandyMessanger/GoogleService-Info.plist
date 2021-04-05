@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>768170028499-ucuag1l4me09kj0ojusghagfbdgh7ckp.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.768170028499-ucuag1l4me09kj0ojusghagfbdgh7ckp</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCAosEQkP6MPZP4xCpYsx1tMRZY--_Wn8g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>768170028499</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.happyjem.candymessanger</string>
+	<key>PROJECT_ID</key>
+	<string>candymessanger</string>
+	<key>STORAGE_BUCKET</key>
+	<string>candymessanger.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:768170028499:ios:ed00048f1964376a279326</string>
+	<key>DATABASE_URL</key>
+	<string>https://candymessanger-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
