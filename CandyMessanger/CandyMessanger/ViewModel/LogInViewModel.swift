@@ -43,6 +43,8 @@ class LoginViewModel: ObservableObject {
                 }
             } receiveValue: { (userId) in
                 debugPrint("current user id => \(userId)")
+                // Main 화면으로 변경
+                UserDefaults.standard.set(true, forKey: "log_status")
             }.store(in: &cancallable)
 
         }

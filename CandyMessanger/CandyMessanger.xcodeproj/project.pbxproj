@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E3D87EE4B748F9464FCC52E /* Pods_CandyMessangerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DAE399B0D00E344CCCBB1F /* Pods_CandyMessangerTests.framework */; };
 		7C0749E4261A1A8400562C9E /* CornerShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0749E3261A1A8400562C9E /* CornerShape.swift */; };
 		7C0749EC261A1C5A00562C9E /* LoginContextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0749EB261A1C5A00562C9E /* LoginContextView.swift */; };
 		7C0749F4261A1CAD00562C9E /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0749F3261A1CAD00562C9E /* LogInViewModel.swift */; };
@@ -33,8 +32,15 @@
 		7C55022026193CB900130B9A /* NewMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55021F26193CB900130B9A /* NewMessage.swift */; };
 		7C55022826193CD800130B9A /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55022726193CD800130B9A /* ChatView.swift */; };
 		7C5502332619402E00130B9A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5502322619402E00130B9A /* SplashView.swift */; };
-		97B44F905AF45FEAB4EC8700 /* Pods_CandyMessanger_CandyMessangerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD8DC90790128BD2F8A4C5B1 /* Pods_CandyMessanger_CandyMessangerUITests.framework */; };
-		D9567EF38F6C9B28722790F2 /* Pods_CandyMessanger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69348A364FF6D5783332E13 /* Pods_CandyMessanger.framework */; };
+		7CD29C94261B7454006A4CF7 /* NewMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD29C93261B7454006A4CF7 /* NewMessageViewModel.swift */; };
+		7CD29C99261B7786006A4CF7 /* RecentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD29C98261B7786006A4CF7 /* RecentUser.swift */; };
+		7CD29C9E261B789D006A4CF7 /* NewChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD29C9D261B789D006A4CF7 /* NewChatService.swift */; };
+		7CD29CC3261BE800006A4CF7 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 7CD29CC2261BE800006A4CF7 /* FirebaseStorageSwift-Beta */; };
+		7CD29CC5261BE800006A4CF7 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 7CD29CC4261BE800006A4CF7 /* FirebaseFirestoreSwift-Beta */; };
+		7CD29CC7261BE800006A4CF7 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 7CD29CC6261BE800006A4CF7 /* FirebaseStorage */; };
+		7CD29CC9261BE800006A4CF7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7CD29CC8261BE800006A4CF7 /* FirebaseAuth */; };
+		7CD29CCB261BE800006A4CF7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 7CD29CCA261BE800006A4CF7 /* FirebaseFirestore */; };
+		7CD29CCD261BE800006A4CF7 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 7CD29CCC261BE800006A4CF7 /* FirebaseDatabase */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +61,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00924DF7D108423BCC9E97DC /* Pods-CandyMessanger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandyMessanger.release.xcconfig"; path = "Target Support Files/Pods-CandyMessanger/Pods-CandyMessanger.release.xcconfig"; sourceTree = "<group>"; };
-		225508EF51EC023743E55573 /* Pods-CandyMessanger-CandyMessangerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandyMessanger-CandyMessangerUITests.release.xcconfig"; path = "Target Support Files/Pods-CandyMessanger-CandyMessangerUITests/Pods-CandyMessanger-CandyMessangerUITests.release.xcconfig"; sourceTree = "<group>"; };
-		25DAE399B0D00E344CCCBB1F /* Pods_CandyMessangerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CandyMessangerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		393A8D2B738CFA0170660A05 /* Pods-CandyMessangerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandyMessangerTests.debug.xcconfig"; path = "Target Support Files/Pods-CandyMessangerTests/Pods-CandyMessangerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C0749E3261A1A8400562C9E /* CornerShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerShape.swift; sourceTree = "<group>"; };
 		7C0749EB261A1C5A00562C9E /* LoginContextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContextView.swift; sourceTree = "<group>"; };
 		7C0749F3261A1CAD00562C9E /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
@@ -88,11 +90,9 @@
 		7C55021F26193CB900130B9A /* NewMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessage.swift; sourceTree = "<group>"; };
 		7C55022726193CD800130B9A /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		7C5502322619402E00130B9A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		AB6FC0E81D29E7E2212B0A3C /* Pods-CandyMessanger-CandyMessangerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandyMessanger-CandyMessangerUITests.debug.xcconfig"; path = "Target Support Files/Pods-CandyMessanger-CandyMessangerUITests/Pods-CandyMessanger-CandyMessangerUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		AD8DC90790128BD2F8A4C5B1 /* Pods_CandyMessanger_CandyMessangerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CandyMessanger_CandyMessangerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0437E41A8C28AD73424056B /* Pods-CandyMessanger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandyMessanger.debug.xcconfig"; path = "Target Support Files/Pods-CandyMessanger/Pods-CandyMessanger.debug.xcconfig"; sourceTree = "<group>"; };
-		C69348A364FF6D5783332E13 /* Pods_CandyMessanger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CandyMessanger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E54636009E647D65A8A72369 /* Pods-CandyMessangerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandyMessangerTests.release.xcconfig"; path = "Target Support Files/Pods-CandyMessangerTests/Pods-CandyMessangerTests.release.xcconfig"; sourceTree = "<group>"; };
+		7CD29C93261B7454006A4CF7 /* NewMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewModel.swift; sourceTree = "<group>"; };
+		7CD29C98261B7786006A4CF7 /* RecentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentUser.swift; sourceTree = "<group>"; };
+		7CD29C9D261B789D006A4CF7 /* NewChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +101,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C5501E02618CD6600130B9A /* Alamofire in Frameworks */,
+				7CD29CC9261BE800006A4CF7 /* FirebaseAuth in Frameworks */,
+				7CD29CC5261BE800006A4CF7 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				7C5501DA2618CCD700130B9A /* Nuke in Frameworks */,
-				D9567EF38F6C9B28722790F2 /* Pods_CandyMessanger.framework in Frameworks */,
+				7CD29CC7261BE800006A4CF7 /* FirebaseStorage in Frameworks */,
+				7CD29CC3261BE800006A4CF7 /* FirebaseStorageSwift-Beta in Frameworks */,
+				7CD29CCD261BE800006A4CF7 /* FirebaseDatabase in Frameworks */,
+				7CD29CCB261BE800006A4CF7 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +115,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E3D87EE4B748F9464FCC52E /* Pods_CandyMessangerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +122,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B44F905AF45FEAB4EC8700 /* Pods_CandyMessanger_CandyMessangerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +145,6 @@
 				7C5501B62618C0F600130B9A /* CandyMessangerUITests */,
 				7C5501932618C0F400130B9A /* Products */,
 				C53D0AD0C68D0BE831CFEF10 /* Pods */,
-				B5B9244EE754731B71435B8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -223,6 +225,7 @@
 			children = (
 				7C0749F3261A1CAD00562C9E /* LogInViewModel.swift */,
 				7C0749F8261A1D5E00562C9E /* SignUpViewModel.swift */,
+				7CD29C93261B7454006A4CF7 /* NewMessageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 		7C5501FA2618D91200130B9A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7CD29C98261B7786006A4CF7 /* RecentUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -239,6 +243,7 @@
 			children = (
 				7C55020E2618EF2000130B9A /* Error */,
 				7C5502092618ED3B00130B9A /* UserService.swift */,
+				7CD29C9D261B789D006A4CF7 /* NewChatService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -258,25 +263,9 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		B5B9244EE754731B71435B8D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C69348A364FF6D5783332E13 /* Pods_CandyMessanger.framework */,
-				AD8DC90790128BD2F8A4C5B1 /* Pods_CandyMessanger_CandyMessangerUITests.framework */,
-				25DAE399B0D00E344CCCBB1F /* Pods_CandyMessangerTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		C53D0AD0C68D0BE831CFEF10 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B0437E41A8C28AD73424056B /* Pods-CandyMessanger.debug.xcconfig */,
-				00924DF7D108423BCC9E97DC /* Pods-CandyMessanger.release.xcconfig */,
-				AB6FC0E81D29E7E2212B0A3C /* Pods-CandyMessanger-CandyMessangerUITests.debug.xcconfig */,
-				225508EF51EC023743E55573 /* Pods-CandyMessanger-CandyMessangerUITests.release.xcconfig */,
-				393A8D2B738CFA0170660A05 /* Pods-CandyMessangerTests.debug.xcconfig */,
-				E54636009E647D65A8A72369 /* Pods-CandyMessangerTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -288,11 +277,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C5501BC2618C0F600130B9A /* Build configuration list for PBXNativeTarget "CandyMessanger" */;
 			buildPhases = (
-				E4A6D19EAE40317F61692E8C /* [CP] Check Pods Manifest.lock */,
 				7C55018E2618C0F400130B9A /* Sources */,
 				7C55018F2618C0F400130B9A /* Frameworks */,
 				7C5501902618C0F400130B9A /* Resources */,
-				E595F478D7CBC0740E4DA74E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -302,6 +289,12 @@
 			packageProductDependencies = (
 				7C5501D92618CCD700130B9A /* Nuke */,
 				7C5501DF2618CD6600130B9A /* Alamofire */,
+				7CD29CC2261BE800006A4CF7 /* FirebaseStorageSwift-Beta */,
+				7CD29CC4261BE800006A4CF7 /* FirebaseFirestoreSwift-Beta */,
+				7CD29CC6261BE800006A4CF7 /* FirebaseStorage */,
+				7CD29CC8261BE800006A4CF7 /* FirebaseAuth */,
+				7CD29CCA261BE800006A4CF7 /* FirebaseFirestore */,
+				7CD29CCC261BE800006A4CF7 /* FirebaseDatabase */,
 			);
 			productName = CandyMessanger;
 			productReference = 7C5501922618C0F400130B9A /* CandyMessanger.app */;
@@ -311,7 +304,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C5501BF2618C0F600130B9A /* Build configuration list for PBXNativeTarget "CandyMessangerTests" */;
 			buildPhases = (
-				CB98DC5D9EB52ABBD23E4E67 /* [CP] Check Pods Manifest.lock */,
 				7C5501A42618C0F600130B9A /* Sources */,
 				7C5501A52618C0F600130B9A /* Frameworks */,
 				7C5501A62618C0F600130B9A /* Resources */,
@@ -330,11 +322,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C5501C22618C0F600130B9A /* Build configuration list for PBXNativeTarget "CandyMessangerUITests" */;
 			buildPhases = (
-				C921D8D591A3023B77F01BC4 /* [CP] Check Pods Manifest.lock */,
 				7C5501AF2618C0F600130B9A /* Sources */,
 				7C5501B02618C0F600130B9A /* Frameworks */,
 				7C5501B12618C0F600130B9A /* Resources */,
-				FA2977B4331F0C0BE0A2059C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -380,6 +370,7 @@
 			packageReferences = (
 				7C5501D82618CCD700130B9A /* XCRemoteSwiftPackageReference "Nuke" */,
 				7C5501DE2618CD6600130B9A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				7CD29CC1261BE800006A4CF7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 7C5501932618C0F400130B9A /* Products */;
 			projectDirPath = "";
@@ -419,115 +410,14 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		C921D8D591A3023B77F01BC4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CandyMessanger-CandyMessangerUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CB98DC5D9EB52ABBD23E4E67 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CandyMessangerTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E4A6D19EAE40317F61692E8C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CandyMessanger-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E595F478D7CBC0740E4DA74E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CandyMessanger/Pods-CandyMessanger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CandyMessanger/Pods-CandyMessanger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CandyMessanger/Pods-CandyMessanger-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FA2977B4331F0C0BE0A2059C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CandyMessanger-CandyMessangerUITests/Pods-CandyMessanger-CandyMessangerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CandyMessanger-CandyMessangerUITests/Pods-CandyMessanger-CandyMessangerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CandyMessanger-CandyMessangerUITests/Pods-CandyMessanger-CandyMessangerUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		7C55018E2618C0F400130B9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CD29C9E261B789D006A4CF7 /* NewChatService.swift in Sources */,
 				7C5502042618DAF200130B9A /* MainContentView.swift in Sources */,
+				7CD29C94261B7454006A4CF7 /* NewMessageViewModel.swift in Sources */,
 				7C0749F9261A1D5E00562C9E /* SignUpViewModel.swift in Sources */,
 				7C5501FF2618DAD800130B9A /* RegisterView.swift in Sources */,
 				7C55019F2618C0F600130B9A /* Persistence.swift in Sources */,
@@ -537,6 +427,7 @@
 				7C0749EC261A1C5A00562C9E /* LoginContextView.swift in Sources */,
 				7C55022026193CB900130B9A /* NewMessage.swift in Sources */,
 				7C0749E4261A1A8400562C9E /* CornerShape.swift in Sources */,
+				7CD29C99261B7786006A4CF7 /* RecentUser.swift in Sources */,
 				7C55020A2618ED3B00130B9A /* UserService.swift in Sources */,
 				7C5501982618C0F400130B9A /* ContentView.swift in Sources */,
 				7C5502332619402E00130B9A /* SplashView.swift in Sources */,
@@ -700,7 +591,6 @@
 		};
 		7C5501BD2618C0F600130B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0437E41A8C28AD73424056B /* Pods-CandyMessanger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -724,7 +614,6 @@
 		};
 		7C5501BE2618C0F600130B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00924DF7D108423BCC9E97DC /* Pods-CandyMessanger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -748,7 +637,6 @@
 		};
 		7C5501C02618C0F600130B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 393A8D2B738CFA0170660A05 /* Pods-CandyMessangerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -770,7 +658,6 @@
 		};
 		7C5501C12618C0F600130B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E54636009E647D65A8A72369 /* Pods-CandyMessangerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -792,7 +679,6 @@
 		};
 		7C5501C32618C0F600130B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB6FC0E81D29E7E2212B0A3C /* Pods-CandyMessanger-CandyMessangerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -812,7 +698,6 @@
 		};
 		7C5501C42618C0F600130B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 225508EF51EC023743E55573 /* Pods-CandyMessanger-CandyMessangerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -888,6 +773,14 @@
 				minimumVersion = 5.4.1;
 			};
 		};
+		7CD29CC1261BE800006A4CF7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.9.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -900,6 +793,36 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7C5501DE2618CD6600130B9A /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		7CD29CC2261BE800006A4CF7 /* FirebaseStorageSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7CD29CC1261BE800006A4CF7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageSwift-Beta";
+		};
+		7CD29CC4261BE800006A4CF7 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7CD29CC1261BE800006A4CF7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		7CD29CC6261BE800006A4CF7 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7CD29CC1261BE800006A4CF7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		7CD29CC8261BE800006A4CF7 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7CD29CC1261BE800006A4CF7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		7CD29CCA261BE800006A4CF7 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7CD29CC1261BE800006A4CF7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		7CD29CCC261BE800006A4CF7 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7CD29CC1261BE800006A4CF7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
 		};
 /* End XCSwiftPackageProductDependency section */
 
