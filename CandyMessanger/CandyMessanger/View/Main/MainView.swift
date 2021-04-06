@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct MainContentView: View {
+struct MainView: View {
     
     @AppStorage("log_status") var status = false
     
     var body: some View {
         NavigationView {
             if status {
-                Text("Login Sucess!!!")
+                MainTabView()
             } else {
                 ZStack {
                     LoginView()
@@ -28,6 +28,7 @@ struct MainContentView: View {
 
 struct MainContent_Previews: PreviewProvider {
     static var previews: some View {
-        MainContentView()
+        MainView()
+            .environmentObject(LoginViewModel())
     }
 }

@@ -21,7 +21,7 @@ struct CandyMessangerApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MainContentView()
+            MainView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .environmentObject(loginViewModel)
         }
