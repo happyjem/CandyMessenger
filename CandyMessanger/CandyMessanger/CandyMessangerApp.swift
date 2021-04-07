@@ -18,12 +18,16 @@ struct CandyMessangerApp: App {
     
     // Login ViewModel
     @StateObject var loginViewModel = LoginViewModel()
+    
+    // NewMessage ViewModel
+    @StateObject var newMessageViewModel = NewMessageeViewModel()
 
     var body: some Scene {
         WindowGroup {
             MainView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .environmentObject(loginViewModel)
+                .environmentObject(newMessageViewModel)
         }
     }
 }

@@ -12,17 +12,14 @@ struct MainView: View {
     @AppStorage("log_status") var status = false
     
     var body: some View {
-        NavigationView {
-            if status {
-                MainTabView()
-            } else {
-                ZStack {
-                    LoginView()
-                    SplashView()
-                }
+        if status {
+            MainTabView()
+        } else {
+            ZStack {
+                LoginView()
+                SplashView()
             }
         }
-        
     }
 }
 

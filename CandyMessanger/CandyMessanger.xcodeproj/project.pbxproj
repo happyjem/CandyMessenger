@@ -48,6 +48,7 @@
 		7CD29CCD261BE800006A4CF7 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 7CD29CCC261BE800006A4CF7 /* FirebaseDatabase */; };
 		7CFD14CF261CB7BA00B14598 /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD14CE261CB7BA00B14598 /* NavigationBarModifier.swift */; };
 		7CFD14D7261CBA2100B14598 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD14D6261CBA2100B14598 /* MessageView.swift */; };
+		7CFD14FB261D894100B14598 /* NewUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD14FA261D894100B14598 /* NewUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		7CD29C9D261B789D006A4CF7 /* NewChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatService.swift; sourceTree = "<group>"; };
 		7CFD14CE261CB7BA00B14598 /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
 		7CFD14D6261CBA2100B14598 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		7CFD14FA261D894100B14598 /* NewUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +161,6 @@
 				7C5501AB2618C0F600130B9A /* CandyMessangerTests */,
 				7C5501B62618C0F600130B9A /* CandyMessangerUITests */,
 				7C5501932618C0F400130B9A /* Products */,
-				C53D0AD0C68D0BE831CFEF10 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -245,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				7CD29C98261B7786006A4CF7 /* RecentUser.swift */,
+				7CFD14FA261D894100B14598 /* NewUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -306,13 +308,6 @@
 				7C5501FE2618DAD800130B9A /* RegisterView.swift */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		C53D0AD0C68D0BE831CFEF10 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -482,6 +477,7 @@
 				7C7D1AD2261CA48E00DCFF3B /* MyPageView.swift in Sources */,
 				7C5502332619402E00130B9A /* SplashView.swift in Sources */,
 				7C5501962618C0F400130B9A /* CandyMessangerApp.swift in Sources */,
+				7CFD14FB261D894100B14598 /* NewUser.swift in Sources */,
 				7C5501A22618C0F600130B9A /* CandyMessanger.xcdatamodeld in Sources */,
 				7C55021B26193C6500130B9A /* MessageList.swift in Sources */,
 				7C7D1ACD261CA47500DCFF3B /* HomeView.swift in Sources */,

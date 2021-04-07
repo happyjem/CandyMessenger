@@ -6,8 +6,11 @@
 //
 
 import Foundation
+import UIKit
 import Combine
 import FirebaseAuth
+import FirebaseFirestore
+import FirebaseFirestoreSwift
 
 protocol UserServiceProtocol {
     func currentUser() -> AnyPublisher<User?, Never>
@@ -28,6 +31,10 @@ class UserService: UserServiceProtocol {
                 if let _error = error {
                     return promise(.failure(_error))
                 } else if let user = result?.user {
+                    
+                    // FireStore 에 UserDB생성
+                    self.createAnonymousUserForDB()
+                    
                     return promise(.success(user))
                 }
             }
@@ -55,5 +62,24 @@ class UserService: UserServiceProtocol {
                 promise(.failure(.defaultCase(desc: error.localizedDescription)))
             }
         }.eraseToAnyPublisher()
+    }
+    
+    
+    /// FireStore DB 에 Annoymouse User 를 생성한다.
+    private func createAnonymousUserForDB() {
+        
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        
+        let db = Firestore.firestore()
+        
+        // 임의의 User Model 생성
+        let userCallNum = Int.random(in: 0..<100)
+        let userImgStr = "anonymous_0\(Int.random(in: 1...5))"
+        let anonymousUser = NewUser(id: uid, name: "아무나 \(userCallNum)", userImg: userImgStr, aboutInfo: "아무나 사용자 \(userCallNum).")
+        do {
+            try db.collection("users").document(uid).setData(from: anonymousUser)
+        } catch {
+            debugPrint("Failed To \(#function) : \(error.localizedDescription)")
+        }
     }
 }
