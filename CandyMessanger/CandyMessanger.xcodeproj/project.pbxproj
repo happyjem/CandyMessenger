@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F293FAB261EBF620095224C /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F293FAA261EBF620095224C /* ChatViewModel.swift */; };
 		7C0749E4261A1A8400562C9E /* CornerShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0749E3261A1A8400562C9E /* CornerShape.swift */; };
 		7C0749EC261A1C5A00562C9E /* LoginContextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0749EB261A1C5A00562C9E /* LoginContextView.swift */; };
 		7C0749F4261A1CAD00562C9E /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0749F3261A1CAD00562C9E /* LogInViewModel.swift */; };
@@ -69,6 +70,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F293FAA261EBF620095224C /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		7C0749E3261A1A8400562C9E /* CornerShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerShape.swift; sourceTree = "<group>"; };
 		7C0749EB261A1C5A00562C9E /* LoginContextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContextView.swift; sourceTree = "<group>"; };
 		7C0749F3261A1CAD00562C9E /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
@@ -177,7 +179,6 @@
 		7C5501942618C0F400130B9A /* CandyMessanger */ = {
 			isa = PBXGroup;
 			children = (
-				7C5502372619415900130B9A /* Resource */,
 				7C5502082618ED2700130B9A /* Service */,
 				7C5501FA2618D91200130B9A /* Model */,
 				7C5501F92618D90700130B9A /* ViewModel */,
@@ -238,6 +239,7 @@
 				7C0749F3261A1CAD00562C9E /* LogInViewModel.swift */,
 				7C0749F8261A1D5E00562C9E /* SignUpViewModel.swift */,
 				7CD29C93261B7454006A4CF7 /* NewMessageViewModel.swift */,
+				2F293FAA261EBF620095224C /* ChatViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -267,13 +269,6 @@
 				7C55020F2618EF4600130B9A /* CandyMessengerError.swift */,
 			);
 			path = Error;
-			sourceTree = "<group>";
-		};
-		7C5502372619415900130B9A /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		7C7D1ADB261CA4DA00DCFF3B /* Main */ = {
@@ -483,6 +478,7 @@
 				7C7D1ACD261CA47500DCFF3B /* HomeView.swift in Sources */,
 				7C074A17261AB11600562C9E /* ActivityIndicator.swift in Sources */,
 				7C5502102618EF4600130B9A /* CandyMessengerError.swift in Sources */,
+				2F293FAB261EBF620095224C /* ChatViewModel.swift in Sources */,
 				7C7D1AD7261CA4D500DCFF3B /* RecurtView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

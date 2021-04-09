@@ -39,7 +39,7 @@ class LoginViewModel: ObservableObject {
                 case .failure(let error):
                     debugPrint(error.localizedDescription)
                 case .finished:
-                    debugPrint("Completed!!! 😁")
+                    debugPrint("getCurrentUserId Completed!!! 😁")
                 }
             } receiveValue: { (userId) in
                 debugPrint("current user id => \(userId)")

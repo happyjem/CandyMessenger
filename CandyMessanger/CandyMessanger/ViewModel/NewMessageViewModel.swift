@@ -12,66 +12,66 @@ import FirebaseFirestore
 
 class NewMessageeViewModel: ObservableObject {
     
-    @Published var recentUsers = [RecentUser]()
-    @Published var noExistUser = false
+    @Published var myAuthUsers = [NewUser]()
+    @Published var searchText: String = ""
     
-    init() {
-        let db = Firestore.firestore()
-        let uid = Auth.auth().currentUser?.uid
+    // #. Cancellable (like disposebag)
+    private var cancallable:[AnyCancellable] = []
+    
+    enum Action {
+        case getAllUser
+    }
+    
+    // #. new chat Service
+    private let newChatService: NewChatServiceProtocol
+    
+    init(newChatService: NewChatServiceProtocol = NewChatService()) {
+        self.newChatService = newChatService
         
-        // #. Users 에 recent 테이블 정보를 계속 관찰한다.
-        db.collection("users")
-            .document(uid!)
-            .collection("recent")
-            .order(by: "date", descending: true)
-            .addSnapshotListener { (snapshot, error) in
-                
-                guard let snap = snapshot else { return }
-                
-                // Error 발생한 경우
-                if let _error = error {
-                    debugPrint("DB Listener Error For recent : \(_error.localizedDescription)")
-                    self.noExistUser = true
-                    return
+        // Set Propety Listener
+        self.listen()
+    }
+    
+    func send(action: Action) {
+        switch action {
+        case .getAllUser:
+            newChatService.getAllUsers().sink { completion in
+                switch completion {
+                case .failure(let error):
+                    debugPrint(error.localizedDescription)
+                case .finished:
+                    debugPrint("getAllUser Completed!!! 😁")
                 }
-                
-                // Snapshot이 비어 있는 경우.
-                if snap.isEmpty == true {
-                    debugPrint("Snapshot is empty!!!")
-                    self.noExistUser = true
-                    return
+            } receiveValue: { (users) in
+                self.myAuthUsers = users
+            }.store(in: &cancallable)
+        }
+    }
+    
+    private func listen() {
+        
+        // 사용자 검색
+        $searchText
+            .debounce(for: .milliseconds(200), scheduler: RunLoop.main)
+            .removeDuplicates()
+            .receive(on: RunLoop.main)
+            .sink { (completion) in
+                switch completion {
+                case .failure(let error):
+                    debugPrint(error.localizedDescription)
+                case .finished:
+                    debugPrint("SearchText Completed!!! 😁")
                 }
+            } receiveValue: { (source) in
                 
-                for info in snap.documentChanges {
-                    switch info.type {
-                    case .added:
-                        
-                        let id = info.document.documentID
-                        let name = info.document.get("name") as? String ?? ""
-                        let pic = info.document.get("pic") as? String ?? ""
-                        let lastmsg = info.document.get("lastmsg") as? String ?? ""
-                        let stamp = info.document.get("date") as? Timestamp ?? Timestamp()
-                        
-                        let formatter = DateFormatter()
-                        
-                        formatter.dateFormat = "yyyy.MM.dd"
-                        let date = formatter.string(from: stamp.dateValue())
-                        
-                        formatter.dateFormat = "hh:mm a"
-                        let time = formatter.string(from: stamp.dateValue())
-                        
-                        let recentUser = RecentUser(id: id, name: name, userImg: pic, lastmsg: lastmsg, time: time, date: date, stemp: stamp.dateValue())
-                        
-                        self.recentUsers.append(recentUser)
-                        
-                        debugPrint("Added Recent User id: \(recentUser.id ?? "none")")
-                        
-                    default:
-                        debugPrint("Default Type")
-                    }
+                if self.searchText.isEmpty == false {
+                    self.myAuthUsers = self.myAuthUsers.filter({ $0.name.contains(source)})
+                    debugPrint("Search Result: \(self.myAuthUsers)")
+                } else {
+                    // 검색어가 없을 경우 모든 유저를 보여준다.
+                    self.send(action: .getAllUser)
                 }
-                
-            }
+            }.store(in: &cancallable)
     }
     
 }
