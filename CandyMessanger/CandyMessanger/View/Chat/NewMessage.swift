@@ -40,15 +40,22 @@ struct NewMessage: View {
             .padding(.bottom, 20)
                 
             List {
-                Section(header: ListHeader()) {
-                    ForEach(newMessageViewModel.myAuthUsers) { recent in
-                        Text("\(recent.name)")
+                Section(header:
+                            ListHeader(name: "연결된 사람", color: Color.white)
+                ) {
+                    ForEach(newMessageViewModel.myAuthUsers) { newUser in
+                        //Text("\(newUser.name)")
+                        NewMessageCellView(newUser: newUser)
                     }
+                    .listRowInsets(EdgeInsets())
+                    .background(Color.white)
                 }
+                .listRowBackground(Color.white)
             }
             .onAppear() {
                 newMessageViewModel.send(action: .getAllUser)
             }
+
         }
         .navigationBarTitle("새 메세지", displayMode: .inline)
         .navigationBarBackButtonHidden(true)
@@ -62,13 +69,33 @@ struct NewMessage: View {
     }
 }
 
+
 struct ListHeader: View {
+    let name: String
+    let color: Color
+
     var body: some View {
-        HStack {
-            Text("연결된 사람")
-                .font(.caption)
+        VStack {
+            Spacer()
+            HStack {
+                Text(name)
+                    .font(.caption)
+            }
+            .padding(.leading, 20)
+            Spacer()
         }
-        .background(Color.white)
+        .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+        .background(FillAll(color: color))
+    }
+}
+
+struct FillAll: View {
+    let color: Color
+    
+    var body: some View {
+        GeometryReader { proxy in
+            self.color.frame(width: UIScreen.main.bounds.width, height: proxy.size.height).fixedSize()
+        }
     }
 }
 

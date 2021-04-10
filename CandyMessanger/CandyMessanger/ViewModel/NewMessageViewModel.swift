@@ -15,6 +15,9 @@ class NewMessageeViewModel: ObservableObject {
     @Published var myAuthUsers = [NewUser]()
     @Published var searchText: String = ""
     
+    // #. filter data
+    private var allUsers = [NewUser]()
+    
     // #. Cancellable (like disposebag)
     private var cancallable:[AnyCancellable] = []
     
@@ -44,6 +47,8 @@ class NewMessageeViewModel: ObservableObject {
                 }
             } receiveValue: { (users) in
                 self.myAuthUsers = users
+                // 임시 저장
+                self.allUsers = users
             }.store(in: &cancallable)
         }
     }
@@ -63,13 +68,13 @@ class NewMessageeViewModel: ObservableObject {
                     debugPrint("SearchText Completed!!! 😁")
                 }
             } receiveValue: { (source) in
-                
+                debugPrint("Input Data: \(source)")
                 if self.searchText.isEmpty == false {
-                    self.myAuthUsers = self.myAuthUsers.filter({ $0.name.contains(source)})
+                    self.myAuthUsers = self.allUsers.filter({ $0.name.contains(source)})
                     debugPrint("Search Result: \(self.myAuthUsers)")
                 } else {
                     // 검색어가 없을 경우 모든 유저를 보여준다.
-                    self.send(action: .getAllUser)
+                    self.myAuthUsers = self.allUsers
                 }
             }.store(in: &cancallable)
     }
