@@ -76,6 +76,9 @@ class UserService: UserServiceProtocol {
         let userCallNum = Int.random(in: 0..<100)
         let userImgStr = "anonymous_0\(Int.random(in: 1...5))"
         let anonymousUser = NewUser(id: uid, name: "아무나 \(userCallNum)", userImg: userImgStr, aboutInfo: "아무나 사용자 \(userCallNum).")
+        
+        UserDefaults.standard.setValue("아무나 \(userCallNum)", forKey: "current_user")
+        
         do {
             try db.collection("users").document(uid).setData(from: anonymousUser)
         } catch {

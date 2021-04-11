@@ -10,15 +10,25 @@ import SwiftUI
 struct MessageView: View {
     
     @State private var isShowingNewMessage = false
+    @State private var isShowingChatView = false
+    @State private var selectChatUID: String = ""
     
     var body: some View {
+        
+        
         NavigationView {
             
             VStack(spacing: 20, content: {
                 
-                NavigationLink(destination: NewMessage(), isActive: $isShowingNewMessage) {
+                NavigationLink(destination: NewMessage(selectChatUID: $selectChatUID), isActive: $isShowingNewMessage) {
                     EmptyView()
                 }
+                
+                NavigationLink(destination: ChatView(selectChatUID: $selectChatUID), isActive: $isShowingChatView) {
+                    EmptyView()
+                }
+                
+                ChatHistoryView(selectChatUID: $selectChatUID)
                 
             })
             .navigationBarTitle("메세지", displayMode: .inline)
@@ -29,7 +39,6 @@ struct MessageView: View {
                     .foregroundColor(Color("tabBar_select"))
             }))
             .navigationBarColor(UIColor.white, textColor: UIColor.black)
-           
         }
     }
 }

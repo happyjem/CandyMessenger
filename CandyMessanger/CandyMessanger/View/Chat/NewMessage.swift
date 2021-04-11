@@ -11,6 +11,9 @@ struct NewMessage: View {
     
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     @EnvironmentObject var newMessageViewModel: NewMessageeViewModel
+    @Binding var selectChatUID: String
+    @State private var isShowingChatView = false
+    
     
     var body: some View {
         
@@ -44,8 +47,17 @@ struct NewMessage: View {
                             ListHeader(name: "연결된 사람", color: Color.white)
                 ) {
                     ForEach(newMessageViewModel.myAuthUsers) { newUser in
-                        //Text("\(newUser.name)")
-                        NewMessageCellView(newUser: newUser)
+                        Button(action: {
+                            if let userId = newUser.id {
+                                self.selectChatUID = userId
+                                isShowingChatView = true
+                            }
+                        }) {
+                            NewMessageCellView(newUser: newUser)
+                        }
+                        .fullScreenCover(isPresented: $isShowingChatView) {
+                            ChatView(selectChatUID: $selectChatUID)
+                        }
                     }
                     .listRowInsets(EdgeInsets())
                     .background(Color.white)
@@ -99,8 +111,8 @@ struct FillAll: View {
     }
 }
 
-struct NewMessage_Previews: PreviewProvider {
-    static var previews: some View {
-        NewMessage()
-    }
-}
+//struct NewMessage_Previews: PreviewProvider {
+//    static var previews: some View {
+//        NewMessage()
+//    }
+//}

@@ -17,7 +17,8 @@ struct RecentUser: Identifiable, Codable, Hashable {
     var name: String
     var userImg: String
     var lastmsg: String
-    var time: String
-    var date: String
     var stemp: Date
+    var date: String
+    var time: String
+    var uid: String
 }

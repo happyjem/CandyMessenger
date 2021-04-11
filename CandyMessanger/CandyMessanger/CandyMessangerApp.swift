@@ -21,6 +21,12 @@ struct CandyMessangerApp: App {
     
     // NewMessage ViewModel
     @StateObject var newMessageViewModel = NewMessageeViewModel()
+    
+    // ChatViewModel ViewModel
+    @StateObject var chatViewModel = ChatViewModel()
+    
+    // ChatHistory ViewModel
+    @StateObject var chatHistoryViewModel = ChatHistoryViewModel()
 
     var body: some Scene {
         WindowGroup {
@@ -28,6 +34,8 @@ struct CandyMessangerApp: App {
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .environmentObject(loginViewModel)
                 .environmentObject(newMessageViewModel)
+                .environmentObject(chatViewModel)
+                .environmentObject(chatHistoryViewModel)
         }
     }
 }
